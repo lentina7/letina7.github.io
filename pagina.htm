@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página profesional de Lcda. Sonia Beatriz Socop Chiroy, ofreciendo servicios de psicología clínica, terapia gestalt y terapia cognitivo conductual.">
+    <meta name="keywords" content="psicología, terapia gestalt, terapia cognitivo conductual, servicios psicológicos">
+    <meta name="author" content="Sonia Beatriz Socop Chiroy">
+    <title>Mi Página Profesional</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center; 
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .card {
+            border: none;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .bg-dark {
+            background-color: #343a40 !important;
+        }
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+        footer {
+            background-color: #007bff;
+        }
+        footer p {
+            margin: 0;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        h2 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+        }
+        .service-box, .mission-vision-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .service-psicologia {
+            border-left: 5px solid #28a745; /* Color verde */
+        }
+        .service-gestalt {
+            border-left: 5px solid #ffc107; /* Color amarillo */
+        }
+        .service-cognitivo {
+            border-left: 5px solid #dc3545; /* Color rojo */
+        }
+        .mission-vision-personalizada {
+            border-left: 5px solid #007bff; /* Color azul */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1 class="display-4">Lcda. Sonia Beatriz Socop Chiroy</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mision-vision">Misión y Visión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tematica">Temática Profesional</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Página de Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Transformando Ideas en Realidad</h1>
+            <p>Ofrecemos soluciones innovadoras para impulsar tu bienestar emocional.</p>
+            <a href="#servicios" class="btn btn-primary btn-lg">Descubre nuestros servicios</a>
+        </div>
+    </section>
+
+    <!-- Descripción de Servicios -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Servicios que Ofrecemos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card service-box service-psicologia">
+                        <div class="card-body">
+                            <h5 class="card-title">Psicología Clínica</h5>
+                            <p class="card-text">Ofrecemos evaluaciones y tratamientos personalizados para diversas condiciones emocionales y psicológicas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-box service-gestalt">
+                        <div class="card-body">
+                            <h5 class="card-title">Terapia Gestalt</h5>
+                            <p class="card-text">Focalizada en el aquí y ahora, ayudamos a los pacientes a tomar conciencia de sus emociones y a mejorar sus relaciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-box service-cognitivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Terapia Cognitivo Conductual</h5>
+                            <p class="card-text">Ayudamos a los pacientes a identificar y cambiar patrones de pensamiento negativos que afectan su comportamiento y bienestar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section id="mision-vision" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Misión y Visión</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mission-vision-box">
+                        <h5><strong>Misión:</strong></h5>
+                        <p>Dar un servicio personalizado para mayor satisfacción hacia los pacientes.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mission-vision-box mission-vision-personalizada">
+                        <h5><strong>Visión:</strong></h5>
+                        <p>Crear un ambiente seguro y confiable al paciente que requiera el servicio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información Temática -->
+    <section id="tematica" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Información Temática</h2>
+            <p>Nuestra especialidad se centra en ofrecer atención psicológica de calidad, adaptando nuestras estrategias a las necesidades de cada paciente. A través de un enfoque personalizado, ayudamos a maximizar su bienestar emocional.</p>
+            <div class="text-center my-4">
+                <h3>Video Informativo</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QmFTLHbp1As" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Mi Página Profesional. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
